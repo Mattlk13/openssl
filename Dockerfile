@@ -11,11 +11,11 @@
 ##   Connect to the container at DOCKER_IP:3000
 ##     replacing DOCKER_IP for the IP of your active docker host
 
-FROM gcr.io/stacksmith-images/minideb-buildpack:jessie-r8
+FROM gcr.io/stacksmith-images/minideb-buildpack:jessie-r9
 
 MAINTAINER Bitnami <containers@bitnami.com>
 
-ENV STACKSMITH_STACK_ID="13zyejt" \
+ENV STACKSMITH_STACK_ID="m1gddg3" \
     STACKSMITH_STACK_NAME="Ruby for Mattlk13/openssl" \
     STACKSMITH_STACK_PRIVATE="1"
 
