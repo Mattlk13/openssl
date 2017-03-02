@@ -11,18 +11,18 @@
 ##   Connect to the container at DOCKER_IP:3000
 ##     replacing DOCKER_IP for the IP of your active docker host
 
-FROM gcr.io/stacksmith-images/minideb-buildpack:jessie-r9
+FROM gcr.io/stacksmith-images/minideb-buildpack:jessie-r10
 
 MAINTAINER Bitnami <containers@bitnami.com>
 
-ENV STACKSMITH_STACK_ID="m1gddg3" \
+ENV STACKSMITH_STACK_ID="gdxu95s" \
     STACKSMITH_STACK_NAME="Ruby for Mattlk13/openssl" \
     STACKSMITH_STACK_PRIVATE="1"
 
 # Install required system packages
 RUN install_packages libc6 libssl1.0.0 zlib1g libreadline6 libncurses5 libtinfo5 libffi6 libxml2-dev zlib1g-dev libxslt1-dev libgmp-dev ghostscript imagemagick libmysqlclient18 libpq5
 
-RUN bitnami-pkg install ruby-2.4.0-0 --checksum 189d7da38f702086231ddf371b41ddc8b29382147522d7dad399bbdb7944d958
+RUN bitnami-pkg install ruby-2.4.0-1 --checksum c42ef6b39fe67b3fc60e41e42aa5d3a39de0f714069369a15342ceed0b53a6a5
 
 ENV PATH=/opt/bitnami/ruby/bin:$PATH
 
